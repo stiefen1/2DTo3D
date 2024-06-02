@@ -7,4 +7,5 @@ find_package(OpenCV REQUIRED)
 
 add_executable(pointcloud-colorization src/main.cpp)
 
+# https://stackoverflow.com/questions/7417242/linking-problem-with-opencv-and-cmake
 target_link_libraries(pointcloud-colorization PRIVATE ${OpenCV_LIBS})
